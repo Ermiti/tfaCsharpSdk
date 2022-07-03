@@ -10,13 +10,13 @@ namespace tfaCSharpSdk
 {
     class TFAuser
     {
-
-        public string user(string UserId, string TokenId)
+        public string accessToken;
+        public string user(string UserToken)
          {
             string Server = "https://tele-fa-api.herokuapp.com/api/access/";
-            string v=  $"{Server}{TokenId}/{UserId}";
-          
-             return JsonConvert.SerializeObject(v);
+            string v=  $"{Server}{accessToken}/{UserToken}";
+
+            return JsonConvert.SerializeObject(v);
         }
 
       
