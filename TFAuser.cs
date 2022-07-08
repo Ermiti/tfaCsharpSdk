@@ -10,7 +10,7 @@ namespace tfaCSharpSdk
 {
     class TFAuser
     {
-        public string accessToken;
+        static string accessToken;
         public string user(string UserToken)
          {
             string Server = "https://tele-fa-api.herokuapp.com/api/access/";
